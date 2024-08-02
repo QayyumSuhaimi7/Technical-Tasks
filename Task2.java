@@ -2,22 +2,22 @@ public class Task2 {
     public static void main(String[] args) {
 
         System.out.println("\nExample 1");
-        checkTrashSymbol("a@b!!b$a", "!@$");
+       checkPalindrome("a@b!!b$a", "!@$");
 
         System.out.println();
 
         System.out.println("Example 2");
-        checkTrashSymbol("?Aa#c", "#?");
+        checkPalindrome("?Aa#c", "#?");
 
         System.out.println();
 
         System.out.println("Example 3");
-        checkTrashSymbol("102!01", "!");
+        checkPalindrome("102!01", "!");
         System.out.println();
 
     }
 
-    public static void checkTrashSymbol(String InputString, String TrashSymbolsString) {
+    public static void checkPalindrome(String InputString, String TrashSymbolsString) {
 
         InputString = InputString.toLowerCase();
 
