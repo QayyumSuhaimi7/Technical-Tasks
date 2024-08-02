@@ -2,7 +2,7 @@ public class Task2 {
     public static void main(String[] args) {
 
         System.out.println("\nExample 1");
-       checkPalindrome("a@b!!b$a", "!@$");
+        checkPalindrome("a@b!!b$a", "!@$");
 
         System.out.println();
 
@@ -32,7 +32,7 @@ public class Task2 {
 
             if (i < j && InputString.charAt(i) != (InputString.charAt(j))) {
                 result = false;
-                //System.out.println(InputString.charAt(i));
+                // System.out.println(InputString.charAt(i));
             }
 
             j--;
@@ -46,14 +46,16 @@ public class Task2 {
 
     public static int checkTrashSymbol(String InputString, int index, String TrashSymbolsString, String Side) {
 
-        if(Side.equals("Left")) {
-            while (index < InputString.length() && TrashSymbolsString.contains(Character.toString(InputString.charAt(index)))){
-                //System.out.println(InputString.charAt(index));
+        if (Side.equals("Left")) {
+            while (index < InputString.length()
+                    && TrashSymbolsString.contains(Character.toString(InputString.charAt(index)))) {
+                // System.out.println(InputString.charAt(index));
                 index++;
             }
         } else {
-            while (index < InputString.length() && TrashSymbolsString.contains(Character.toString(InputString.charAt(index)))){
-                //System.out.println(InputString.charAt(index));
+            while (index < InputString.length()
+                    && TrashSymbolsString.contains(Character.toString(InputString.charAt(index)))) {
+                // System.out.println(InputString.charAt(index));
                 index--;
             }
         }
@@ -63,4 +65,3 @@ public class Task2 {
     }
 
 }
-
