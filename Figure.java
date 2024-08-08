@@ -1,6 +1,6 @@
 public abstract class Figure {
 
-    abstract void move();
-    abstract void rotate();
+    abstract void Move(double deltaX, double deltaY);
+    abstract void Rotate(double angle, Point start);
 
 }
